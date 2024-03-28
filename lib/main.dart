@@ -1,9 +1,12 @@
+import 'package:education_app/core/injection/dependency_injection.dart';
 import 'package:education_app/core/res/res.dart';
 import 'package:education_app/core/routing/app_routing.dart';
 import 'package:education_app/core/routing/routing.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await inject();
   runApp(const MyApp());
 }
 
