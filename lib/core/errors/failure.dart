@@ -1,3 +1,4 @@
+import 'package:education_app/core/errors/errors.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class Failure extends Equatable {
@@ -18,6 +19,13 @@ class CacheFailure extends Failure {
     required super.message,
     required super.statusCode,
   });
+
+  factory CacheFailure.fromException(CacheException exception) {
+    return CacheFailure(
+      message: exception.message,
+      statusCode: exception.statusCode,
+    );
+  }
 }
 
 class ServerFailure extends Failure {
@@ -26,5 +34,10 @@ class ServerFailure extends Failure {
     required super.statusCode,
   });
 
-  // ServerFailure.fromException()
+  factory ServerFailure.fromException(ServerException exception) {
+    return ServerFailure(
+      message: exception.message,
+      statusCode: exception.statusCode,
+    );
+  }
 }
