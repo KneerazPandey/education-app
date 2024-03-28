@@ -1,4 +1,6 @@
 import 'package:education_app/core/res/res.dart';
+import 'package:education_app/core/routing/app_routing.dart';
+import 'package:education_app/core/routing/routing.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,8 +24,10 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           color: Colors.transparent,
         ),
-        fontFamily: Fonts.poppins,
+        fontFamily: AppFonts.poppins,
       ),
+      onGenerateRoute: onGenerateRoute,
+      initialRoute: AppRouting.onBoardingScreenRouteName,
     );
   }
 }

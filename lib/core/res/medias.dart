@@ -1,4 +1,4 @@
-class Medias {
+class AppMedias {
   static const _baseVector = 'assets/vectors';
   static const _baseImage = 'assets/images';
   static const _baseLottie = 'assets/lottie';

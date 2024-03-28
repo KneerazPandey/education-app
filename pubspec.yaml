@@ -85,6 +85,7 @@ flutter:
   assets:
     - assets/
     - assets/fonts/
+    - assets/images/
     - assets/icons/
     - assets/lottie/
     - assets/vectors/
@@ -128,14 +129,14 @@ flutter:
         - asset: assets/fonts/aeonik/AeonikTRIAL-BoldItalic.otf 
           style: italic
           weight: 700
-        - asset: assets/fonts/peonik/AeonikTRIAL-Light.otf 
+        - asset: assets/fonts/aeonik/AeonikTRIAL-Light.otf 
           weight: 300
-        - asset: assets/fonts/peonik/AeonikTRIAL-LightItalic.otf 
+        - asset: assets/fonts/aeonik/AeonikTRIAL-LightItalic.otf 
           style: italic
           weight: 300
         - asset: assets/fonts/aeonik/AeonikTRIAL-Regular.otf 
           weight: 400
-        - asset: assets/fonts/aeonik/AeonikTRIAL-Regular Italic.otf
+        - asset: assets/fonts/aeonik/AeonikTRIAL-RegularItalic.otf
           style: italic
           weight: 400
   #
