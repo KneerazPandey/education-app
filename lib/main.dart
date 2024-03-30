@@ -3,11 +3,16 @@ import 'package:education_app/core/res/res.dart';
 import 'package:education_app/core/routing/app_routing.dart';
 import 'package:education_app/core/routing/routing.dart';
 import 'package:education_app/features/on_boarding/presentation/bloc/on_boarding_bloc.dart';
+import 'package:education_app/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   await inject();
   runApp(const MyApp());
 }

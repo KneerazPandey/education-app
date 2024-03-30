@@ -30,7 +30,7 @@ class LocalUserModel extends LocalUser {
     );
   }
 
-  LocalUser copyWith({
+  LocalUserModel copyWith({
     String? uid,
     String? email,
     int? points,
@@ -42,7 +42,7 @@ class LocalUserModel extends LocalUser {
     List<String>? followings,
     List<String>? groups,
   }) {
-    return LocalUser(
+    return LocalUserModel(
       uid: uid ?? this.uid,
       email: email ?? this.email,
       points: points ?? this.points,
